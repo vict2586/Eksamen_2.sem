@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store</title>
+    <link rel="stylesheet" href="Stye.css">
+
+    <style>
+        #liste {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+            grid-gap: 20px;
+            margin-top: 30px;
+            margin-top: 30px;
+        }
+
+        #liste article {
+            cursor: pointer;
+            padding-top: 22px;
+            font-weight: 400;
+            text-align: center;
+            font-size: 0.875rem;
+            color: #fff;
+            background-color: #333F78;
+            margin: 0;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="container">
+
+            <div id="logo">
+                <a href="Home.html">
+                    <img src="img/logo.jpg" alt="" class="logo_normal">
+                    <img src="img/logo_sticky.svg" alt="" class="logo_sticky">
+                </a>
+            </div>
+
+            <div id="burger-menu" class="overlay">
+                <span id="closebtn">&times;</span>
+                <div class="burger-logo">
+                    <img src="img/logo.jpg">
+                </div>
+                <ul class="overlay-content">
+                    <li><a href="Home.html">Forside</a></li>
+                    <li><a href="Store.html">Store</a></li>
+                    <li><a href="Studio.html">Studio</a></li>
+                    <li><a href="Story.html">Story</a></li>
+                </ul>
+            </div>
+
+
+
+        </div>
+    </header>
+
+    <!----------------------------------------------------------------------------------------------------------------->
+
+    <section id="liste"></section>
+
+    <template>
+        <article class="fag">
+            <img class="foto" src="" alt="">
+            <h3 class="navn"></h3>
+            <h4 class="pris"></h4>
+        </article>
+    </template>
+
+    <!----------------------------------------------------------------------------------------------------------------->
+
+    <footer>
+        <div class="row">
+            <div class="column hide-mobile">
+                <h3>Vi tilbyder også</h3>
+                <ul class="quicklinks">
+                    <li><a href="tilbud.html?id=170">Teambuilding</a></li>
+                    <li><a href="tilbud.html?id=171">Lokaleudlejning</a></li>
+                    <li><a href="tilbud.html?id=172">Gymnasier</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Om IHS</h3>
+                <ul class="quicklinks">
+                    <li><a href="om.html?id=176">Værdigrundlag</a></li>
+                    <li><a href="personale.html">Personale</a></li>
+                    <li><a href="bestyrelse.html">Bestyrelse</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Kontakt os</h3>
+                <ul>
+                    <li class="li1">+45 74 42 18 48</li>
+                    <li class="li2">Friheds Alle 42, 6400</li>
+                    <li class="li3">info@ihs.dk</li>
+                </ul>
+            </div>
+            <div class="column align-right">
+                <img src="img/footer-logo.png" width="180px" style="padding-top: -40px">
+            </div>
+        </div>
+    </footer>
+
+    <!----------------------------------------------------------------------------------------------------------------->
+
+    <div class="bottom_bar">
+        <div class="row">
+            <div class="column">CVR: 35902619</div>
+            <div class="column align-right">2020 © Copyright</div>
+        </div>
+    </div>
+
+    <!----------------------------------------------------------------------------------------------------------------->
+
+    <script>
+        document.addEventListener("DOMContentLoaded", show);
+
+        const listeFag = document.querySelector("#liste");
+        const skabelon = document.querySelector("template").content;
+
+        const url = "http://victoriabuhrmann.dk/kea/eksamen_2.sem/wordpress/wp-json/wp/v2/toj/";
+
+        async function show() {
+            const resspons = await fetch(url);
+            const json = await resspons.json();
+            vis(json);
+        }
+
+        function vis(toj) {
+            toj.forEach(toj => {
+                console.log(toj);
+                const klon = skabelon.cloneNode(true);
+                klon.querySelector(".foto").src = toj.billede.guid;
+                klon.querySelector(".navn").textContent = toj.navn;
+                klon.querySelector(".pris").textContent = toj.pris;
+                listeFag.appendChild(klon);
+            })
+        }
+    </script>
+
+    <!----------------------------------------------------------------------------------------------------------------->
+
+    <script src="Script.js"></script>
+</body></html>
