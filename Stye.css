@@ -336,6 +336,76 @@ header {
 }
 
 /*============================================================================================*/
+/* 3 BOKSE */
+/*============================================================================================*/
+
+.kasser {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 4em;
+    padding: 25px;
+}
+
+.kasser h3 {
+    font-size: 13px;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: #0a0a0a;
+}
+
+.kasser ul {
+    list-style: none;
+    padding-left: 45px;
+    font-size: 14px;
+}
+
+.kasser h3 {
+    padding-bottom: 10px;
+    letter-spacing: 1.3px;
+    padding-left: 45px;
+}
+
+.quicklinks li {
+    padding-bottom: 20px;
+}
+
+/*============================================================================================*/
+/* NEW */
+/*============================================================================================*/
+
+.new {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 5em;
+    padding: 25px;
+}
+
+.new h3 {
+    font-size: 13px;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: #0a0a0a;
+}
+
+.new ul {
+    list-style: none;
+    padding-left: 0;
+    font-size: 14px;
+}
+
+.new h3 {
+    padding-bottom: 10px;
+    letter-spacing: 1.3px;
+    padding-left: 0;
+}
+
+.quicklinks li {
+    padding-bottom: 20px;
+}
+
+/*============================================================================================*/
 /* FOOTER */
 /*============================================================================================*/
 
@@ -352,7 +422,7 @@ footer p {
 
 footer .row {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 4em;
     padding: 25px;
 }
@@ -401,11 +471,13 @@ footer ul {
     list-style: none;
     padding-left: 0;
     font-size: 14px;
+    padding-left: 45px;
 }
 
 footer h3 {
     padding-bottom: 10px;
     letter-spacing: 1.3px;
+    padding-left: 45px;
 }
 
 .quicklinks li {
