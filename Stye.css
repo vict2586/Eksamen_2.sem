@@ -7,8 +7,19 @@
     box-sizing: border-box;
 }
 
+.mt-20 {
+    margin-top: 20px;
+    padding: 240px 900px 10px 100px;
+    text-align: center;
+}
+
+.ps {
+    padding: 0 900px 10px 100px;
+    text-align: center;
+}
+
 /*============================================================================================*/
-/* Header */
+/* Header - ALL */
 /*============================================================================================*/
 
 header {
@@ -18,7 +29,7 @@ header {
     width: 100%;
     padding: 15px 0;
     z-index: 100;
-    background-color: rgba(000, 000, 000, 0.80);
+    background-color: #000;
     height: 70px;
     padding: 10px 50px;
     padding-left: 10px;
@@ -26,7 +37,7 @@ header {
 }
 
 /*============================================================================================*/
-/* Splash */
+/* Splash - HOME - STORE */
 /*============================================================================================*/
 
 .splash_1 {
@@ -35,6 +46,10 @@ header {
     background-position: center;
     width: 100%;
     height: 100vh;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
 }
 
 .splash_2 {
@@ -47,7 +62,7 @@ header {
 
 
 /*============================================================================================*/
-/* Menu */
+/* Menu - ALL */
 /*============================================================================================*/
 
 .main-menu {
@@ -61,12 +76,6 @@ header {
     -ms-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
-
-/*
-.icon_submenu {
-    display: none;
-}
-*/
 
 .main-menu ul,
 .main-menu ul li {
@@ -105,26 +114,25 @@ header {
     opacity: 0.8;
 }
 
-.li::marker {
-    display: none;
+/*============================================================================================*/
+/* splash botton - HOME */
+/*============================================================================================*/
+
+.splash_1 button {
+    background-color: rgba(000, 000, 000, 0.80);
+    border: 1px solid white;
+    padding: 10px 30px;
+    margin: 10px 100px 0 210px;
 }
 
-/*
-.main-menu button {
-    background-color: #68A849;
-    border: none;
-}
-
-.main-menu button a {
+.splash_1 button a {
     color: #fff;
-    font-family: 'Quicksand', sans-serif;
     text-decoration: none;
     font-weight: 500;
 }
-*/
 
 /*============================================================================================*/
-/* Mobil menu */
+/* Mobil menu - ALL */
 /*============================================================================================*/
 
 #burger-menu {
@@ -199,7 +207,7 @@ header {
 
 
 /*============================================================================================*/
-/* Logo */
+/* Logo - ALL */
 /*============================================================================================*/
 
 #logo {
@@ -229,7 +237,7 @@ header {
 }
 
 /*============================================================================================*/
-/* Navigation */
+/* Navigation - ALL */
 /*============================================================================================*/
 
 .main-menu {
@@ -263,7 +271,7 @@ header {
 }
 
 /*============================================================================================*/
-/* Mobile navigation */
+/* Mobile navigation - ALL */
 /*============================================================================================*/
 
 #burger-menu {
@@ -337,7 +345,7 @@ header {
 }
 
 /*============================================================================================*/
-/* TEKST */
+/* TEKST - HOME */
 /*============================================================================================*/
 
 .intro_tekst {
@@ -345,9 +353,8 @@ header {
     margin: 10px 300px 10px 300px;
 }
 
-
 /*============================================================================================*/
-/* 3 BOKSE */
+/* 3 BOKSE - HOME */
 /*============================================================================================*/
 
 .kasser {
@@ -361,8 +368,10 @@ header {
     font-size: 13px;
     font-family: 'Josefin Sans', sans-serif;
     text-transform: uppercase;
-    margin-bottom: 10px;
-    color: #0a0a0a;
+    margin: 130px 130px 130px 140px;
+    color: #fff;
+    background-color: rgba(000, 000, 000, 0.80);
+    position: absolute;
 }
 
 .kasser ul {
@@ -374,15 +383,17 @@ header {
 .kasser h3 {
     padding-bottom: 10px;
     letter-spacing: 1.3px;
-    padding-left: 45px;
+    padding: 10px 30px;
+    text-align: center;
 }
 
 .quicklinks li {
     padding-bottom: 20px;
+    position: relative;
 }
 
 /*============================================================================================*/
-/* NEW */
+/* NEW - STORE */
 /*============================================================================================*/
 
 .new {
@@ -417,7 +428,7 @@ header {
 }
 
 /*============================================================================================*/
-/* FOOTER */
+/* FOOTER - ALL */
 /*============================================================================================*/
 
 footer {
@@ -463,14 +474,12 @@ footer h3 {
     background: url('../img/phone.png') no-repeat no-repeat;
     padding-left: 40px;
     padding-bottom: 20px;
-
 }
 
 .li2 {
     background: url('../img/address.png')no-repeat no-repeat;
     padding-left: 40px;
     padding-bottom: 20px;
-
 }
 
 .li3 {
@@ -502,7 +511,7 @@ footer h3 {
 }
 
 /*============================================================================================*/
-/* REST API */
+/* REST API - STORE */
 /*============================================================================================*/
 
 
@@ -522,12 +531,6 @@ footer h3 {
     font-weight: 400;
     margin: 10px 0;
 }
-
-/*
-#liste .kort {
-    margin-top: 20px;
-}
-*/
 
 #liste img {
     /* Kvadratiske billeder i oversigt vha. object fit */
@@ -558,9 +561,3 @@ footer h3 {
     background-color: #333F78;
     margin: 0;
 }
-
-/*
-.product_img {
-    width: 100%;
-}
-*/
