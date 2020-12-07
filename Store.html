@@ -84,25 +84,25 @@
 
     <div class="new">
         <div class="column hide-mobile">
-            <img src="img/spring.jpg" alt="">
+            <img src="img/aurora.PNG" alt="">
             <h3>Store</h3>
             <p>...</p>
         </div>
 
         <div class="column">
-            <img src="img/spring_1.jpg" alt="">
+            <img src="img/navia.PNG" alt="">
             <h3>Store</h3>
             <p>...</p>
         </div>
 
         <div class="column">
-            <img src="img/spring_2.jpg" alt="">
+            <img src="img/ava.PNG" alt="">
             <h3>Store</h3>
             <p>...</p>
         </div>
 
         <div class="column">
-            <img src="img/spring_2.jpg" alt="">
+            <img src="img/mona.PNG" alt="">
             <h3>Store</h3>
             <p>...</p>
         </div>
@@ -121,9 +121,9 @@
 
     <div class="nav">
         <button class="filter" data-kategori="all">ALL</button>
-        <button class="filter" data-kategori="">DRESSES</button>
-        <button class="filter" data-kategori="">JACKET</button>
-        <button class="filter" data-kategori="">BLAZERS</button>
+        <button class="filter" data-kategori="3">DRESSES</button>
+        <button class="filter" data-kategori="4">JACKET</button>
+        <button class="filter" data-kategori="5">BLAZERS</button>
     </div>
 
     <!----------------------------------------------------------------------------------------------------------------->
@@ -186,35 +186,73 @@
     <!-- JAVASCRIPT -->
     <!----------------------------------------------------------------------------------------------------------------->
 
-    <script>
-        document.addEventListener("DOMContentLoaded", show);
-
-        const listeFag = document.querySelector("#liste");
-        const skabelon = document.querySelector("template").content;
-
-        const url = "http://victoriabuhrmann.dk/kea/eksamen_2.sem/wordpress/wp-json/wp/v2/toj/";
-
-        async function show() {
-            const resspons = await fetch(url);
-            const json = await resspons.json();
-            vis(json);
-        }
-
-        function vis(toj) {
-            toj.forEach(toj => {
-                console.log(toj);
-                const klon = skabelon.cloneNode(true);
-                klon.querySelector(".foto").src = toj.billede.guid;
-                klon.querySelector(".navn").textContent = toj.navn;
-                klon.querySelector(".pris").textContent = toj.pris;
-                listeFag.appendChild(klon);
-            })
-        }
-    </script>
+    <script src="Script.js"></script>
 
     <!----------------------------------------------------------------------------------------------------------------->
     <!-- JAVASCRIPT -->
     <!----------------------------------------------------------------------------------------------------------------->
 
-    <script src="Script.js"></script>
+    <script>
+        let filter = "all";
+        let tojs;
+
+        document.addEventListener("DOMContentLoaded", show);
+
+        const listeToj = document.querySelector("#liste");
+        const skabelon = document.querySelector("template").content;
+
+        const url = "http://victoriabuhrmann.dk/kea/eksamen_2.sem/wordpress/wp-json/wp/v2/toj/";
+
+        async function show() {
+            const JSONData = await fetch(url);
+            tojs = await JSONData.json();
+
+            console.log(tojs);
+
+            addEventListenersToButons();
+
+            vis(tojs);
+        }
+
+        function vis(toj) {
+
+            listeToj.textContent = "";
+
+            tojs.forEach(toj => {
+                if (filter == "all" || filter == toj.categories[0]) {
+
+                    console.log(filter, toj.categories[0])
+
+                    const klon = skabelon.cloneNode(true);
+
+                    klon.querySelector(".foto").src = toj.billede.guid;
+                    klon.querySelector(".navn").textContent = toj.navn;
+                    klon.querySelector(".pris").textContent = toj.pris;
+
+                    listeToj.appendChild(klon);
+                }
+            })
+
+        }
+
+        function addEventListenersToButons() {
+            document.querySelectorAll(".filter").forEach((btn) => {
+                btn.addEventListener("click", filterBTNs);
+            })
+        }
+
+        function filterBTNs() {
+            filter = this.dataset.kategori;
+
+            document.querySelectorAll(".filter").forEach((btn) => {
+
+                btn.classList.remove("valgt");
+            })
+
+            this.classList.add("valgt");
+
+            vis(tojs);
+        }
+    </script>
+
 </body></html>
