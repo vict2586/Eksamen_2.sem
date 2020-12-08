@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SINGLEVIEW</title>
+    <link rel="stylesheet" href="Stye.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+
+            <!----------------------------------------------------------------------------------------------------------------->
+            <!-- LOGO -->
+            <!----------------------------------------------------------------------------------------------------------------->
+
+            <div id="logo">
+                <a href="Home.html">
+                    <img src="img/logo@4x.png" alt="" class="logo_normal">
+                </a>
+            </div>
+
+            <!----------------------------------------------------------------------------------------------------------------->
+            <!-- BUGRER MENU -->
+            <!----------------------------------------------------------------------------------------------------------------->
+
+            <div id="burger-menu" class="overlay">
+
+                <span id="closebtn">&times;</span>
+
+                <div class="burger-logo">
+                    <img src="img/logo@4x.png">
+                </div>
+
+                <ul class="overlay-content">
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="Store.html">Store</a></li>
+                    <li><a href="Studio.html">Studio</a></li>
+                    <li><a href="Story.html">Story</a></li>
+                </ul>
+
+            </div>
+
+            <span id="openbtn">&#9776;</span>
+
+            <!----------------------------------------------------------------------------------------------------------------->
+            <!-- MAIN MENU -->
+            <!----------------------------------------------------------------------------------------------------------------->
+
+            <nav class="main-menu">
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="Store.html">Store</a></li>
+                    <li><a href="Studio.html">Studio</a></li>
+                    <li><a href="Story.html">Story</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <!----------------------------------------------------------------------------------------------------------------->
+    <!-- 2 BOKSE -->
+    <!----------------------------------------------------------------------------------------------------------------->
+
+    <div class="produkt">
+        <div class="column hide-mobile">
+
+            <!----------------------------------------------------------------------------------------------------------------->
+            <!-- TEMPLATE -->
+            <!----------------------------------------------------------------------------------------------------------------->
+
+            <section class="info">
+                <img class="pb" src="" alt="">
+            </section>
+
+        </div>
+
+        <div class="column_1">
+            <h1></h1>
+
+            <p><strong class="pris"></strong></p>
+
+            <p class="first"><em>Organic cotton</em></p>
+
+            <p><em>Crafted in Copenhagen</em></p>
+
+            <p><strong>COLOR</strong>: BLACK / WHITE</p>
+
+            <p><strong>SIZE</strong>: 1 (S-M) / 2 (M-L)</p>
+
+            <p>Amalie is 178 cm and is wearing a size 1</p>
+
+            <p><strong>Please note</strong>: all garments are made to order (lead time 2-4 weeks)</p>
+
+            <p>Crafted from GOTS-certified organic cotton</p>
+
+            <p>Created by using zero-waste pattern cutting</p>
+
+            <p><em>100% organic cotton</em></p>
+
+            <p><em>0% fabric waste</em></p>
+        </div>
+
+    </div>
+
+    <!----------------------------------------------------------------------------------------------------------------->
+    <!-- FOOTER -->
+    <!----------------------------------------------------------------------------------------------------------------->
+
+    <footer>
+        <div class="row">
+            <div class="column hide-mobile">
+                <h3>WRITE US</h3>
+                <ul class="quicklinks">
+                    <li class="li3">info@ihs.dk</li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>FIND US</h3>
+                <ul class="quicklinks">
+                    <li class="li2">Friheds Alle 42, 6400</li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>CONTACT US</h3>
+                <ul class="grow">
+                    <li class="i1"><img src="img/insta_icon@4x.png" alt=""></li>
+                    <li class="i2"><img src="img/fb_icon@4x.png" alt=""></li>
+                    <li class="i3"><img src="img/linkedin_icon@4x.png" alt=""></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!----------------------------------------------------------------------------------------------------------------->
+    <!-- JAVASCRIPT -->
+    <!----------------------------------------------------------------------------------------------------------------->
+
+    <script>
+        let urlParams = new URLSearchParams(window.location.search);
+
+        let id = urlParams.get("id");
+
+        let theToj;
+
+        document.addEventListener("DOMContentLoaded", getTheToj);
+        async function getTheToj() {
+
+            let url = "http://victoriabuhrmann.dk/kea/eksamen_2.sem/wordpress/wp-json/wp/v2/toj/" + id;
+
+            let jsonData = await fetch(url);
+            theToj = await jsonData.json();
+            //console.log("LOADING DONE",theDish);
+            //            showDishes();
+
+            document.querySelector("h1").textContent = theToj.title.rendered;
+            document.querySelector(".pb").src = theToj.billede.guid;
+            document.querySelector(".pris").textContent = theToj.pris;
+            document.querySelector(".info").addEventListener("click", function() {
+                window.history.back();
+
+            });
+        }
+
+    </script>

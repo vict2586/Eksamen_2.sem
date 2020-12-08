@@ -133,7 +133,7 @@
     <section id="liste"></section>
 
     <template>
-        <article class="fag">
+        <article class="toj">
             <img class="foto" src="" alt="">
             <h3 class="navn"></h3>
             <h4 class="pris"></h4>
@@ -228,10 +228,19 @@
                     klon.querySelector(".foto").src = toj.billede.guid;
                     klon.querySelector(".navn").textContent = toj.navn;
                     klon.querySelector(".pris").textContent = toj.pris;
+                    klon.querySelector(".toj").addEventListener("click", function() {
+                        tojClick(toj.id)
+                    });
 
                     listeToj.appendChild(klon);
                 }
             })
+
+        }
+
+        function tojClick(id) {
+            console.log("ID", id);
+            location.href = "singleview.html?id=" + id;
 
         }
 
