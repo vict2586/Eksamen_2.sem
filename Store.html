@@ -83,7 +83,7 @@
     <h1 class="align-center">NEWEST</h1>
 
     <div class="new">
-        <div class="column hide-mobile">
+        <div class="column">
             <img src="img/aurora.PNG" alt="">
             <h3>AUROR DRESS</h3>
             <p>2.800,00 DKK</p>
@@ -113,7 +113,8 @@
     <!----------------------------------------------------------------------------------------------------------------->
 
     <h1 class="align-center">OUR STORE</h1>
-    <p class="brod_text">The collection is continual and trans-seasonal. Each garment is consciously cut and crafted in Copenhagen.</p>
+    <p class="brod_text">The collection is continual and trans-seasonal.</p>
+    <p class="brod_text1">Each garment is consciously cut and crafted in Copenhagen.</p>
 
     <!----------------------------------------------------------------------------------------------------------------->
     <!-- FILTERNING -->
@@ -146,7 +147,7 @@
 
     <footer>
         <div class="row">
-            <div class="column hide-mobile">
+            <div class="column">
                 <h3>WRITE US</h3>
                 <ul class="quicklinks">
                     <li class="li3">hi@namlestudio.com</li>
@@ -170,25 +171,6 @@
     </footer>
 
     <!----------------------------------------------------------------------------------------------------------------->
-    <!-- BOTTOM BAR -->
-    <!----------------------------------------------------------------------------------------------------------------->
-
-    <!--
-    <div class="bottom_bar">
-        <div class="row">
-            <div class="column">CVR: 35902619</div>
-            <div class="column align-right">2020 © Copyright</div>
-        </div>
-    </div>
--->
-
-    <!----------------------------------------------------------------------------------------------------------------->
-    <!-- JAVASCRIPT -->
-    <!----------------------------------------------------------------------------------------------------------------->
-
-    <script src="Script.js"></script>
-
-    <!----------------------------------------------------------------------------------------------------------------->
     <!-- JAVASCRIPT -->
     <!----------------------------------------------------------------------------------------------------------------->
 
@@ -196,32 +178,44 @@
         let filter = "all";
         let tojs;
 
+        // --- Venter til html'en er loaded --- //
+
         document.addEventListener("DOMContentLoaded", show);
 
         const listeToj = document.querySelector("#liste");
         const skabelon = document.querySelector("template").content;
 
+        // --- Fortæller hvilket link der skal hentes info fra --- //
+
         const url = "http://victoriabuhrmann.dk/kea/eksamen_2.sem/wordpress/wp-json/wp/v2/toj/";
+
+        // --- Henter info --- //
 
         async function show() {
             const JSONData = await fetch(url);
             tojs = await JSONData.json();
 
-            console.log(tojs);
+            // console.log(tojs); //
 
             addEventListenersToButons();
 
             vis(tojs);
         }
 
+        // --- Fortæller hvilke info der skal hentes og hvor de skal sættes ind --- //
+
         function vis(toj) {
 
             listeToj.textContent = "";
 
+            // --- Filterer knapper gennem WP --- //
+
             tojs.forEach(toj => {
                 if (filter == "all" || filter == toj.categories[0]) {
 
-                    console.log(filter, toj.categories[0])
+                    // console.log(filter, toj.categories[0]) //
+
+                    // --- WP info --- //
 
                     const klon = skabelon.cloneNode(true);
 
@@ -238,11 +232,15 @@
 
         }
 
+        // --- Åbner induvelt produkt i nyt vindu --- //
+
         function tojClick(id) {
             console.log("ID", id);
-            location.href = "singleview.html?id=" + id;
+            location.href = "Singleview.html?id=" + id;
 
         }
+
+        // --- Filter knapper --- //
 
         function addEventListenersToButons() {
             document.querySelectorAll(".filter").forEach((btn) => {
@@ -263,5 +261,11 @@
             vis(tojs);
         }
     </script>
+
+    <!----------------------------------------------------------------------------------------------------------------->
+    <!-- JAVASCRIPT -->
+    <!----------------------------------------------------------------------------------------------------------------->
+
+    <script src="Script.js"></script>
 
 </body></html>

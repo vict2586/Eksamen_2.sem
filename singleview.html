@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -70,7 +70,7 @@
     <!----------------------------------------------------------------------------------------------------------------->
 
     <div class="produkt">
-        <div class="column hide-mobile">
+        <div class="column">
 
             <!----------------------------------------------------------------------------------------------------------------->
             <!-- TEMPLATE -->
@@ -145,7 +145,7 @@
 
     <footer>
         <div class="row">
-            <div class="column hide-mobile">
+            <div class="column">
                 <h3>WRITE US</h3>
                 <ul class="quicklinks">
                     <li class="li3">hi@namlestudio.com</li>
@@ -182,22 +182,24 @@
         document.addEventListener("DOMContentLoaded", getTheToj);
         async function getTheToj() {
 
+            // --- Fortæller hvilket link der skal hentes info fra --- //
+
             let url = "http://victoriabuhrmann.dk/kea/eksamen_2.sem/wordpress/wp-json/wp/v2/toj/" + id;
+
+            // --- Henter info --- //
 
             let jsonData = await fetch(url);
             theToj = await jsonData.json();
-            //console.log("LOADING DONE",theDish);
-            //            showDishes();
+
+            // console.log("LOADING DONE",getTheToj); //
+
+            // --- WP info --- //
 
             document.querySelector("h1").textContent = theToj.title.rendered;
             document.querySelector(".pb").src = theToj.billede.guid;
             document.querySelector(".pb_1").src = theToj.slide1.guid;
             document.querySelector(".pb_2").src = theToj.slide2.guid;
             document.querySelector(".pris").textContent = theToj.pris;
-            document.querySelector(".info").addEventListener("click", function() {
-                window.history.back();
-
-            });
         }
 
         // ------------------------------------------------------ LÅNT KODE ------------------------------------------------------ //

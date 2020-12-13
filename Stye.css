@@ -44,9 +44,13 @@
 
 .brod_text {
     text-align: center;
-    margin-top: 20px;
-    margin-left: 300px;
-    margin-right: 300px;
+    margin-top: 10px;
+    font-family: 'Lato', sans-serif;
+}
+
+.brod_text1 {
+    text-align: center;
+    margin-bottom: 20px;
     font-family: 'Lato', sans-serif;
 }
 
@@ -435,7 +439,7 @@ footer ul {
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 100vh;
+    height: 81vh;
     color: #fff;
     margin: 0;
     padding: 0;
@@ -571,7 +575,7 @@ footer ul {
     height: 55vh;
     padding-left: 300px;
     background-color: aquamarine;
-    margin-bottom: 64.5px;
+    margin-bottom: 76px;
     margin-top: 64.5px;
     position: relative;
     border-radius: 15px 15px 15px 15px;
@@ -582,7 +586,7 @@ footer ul {
     height: 360.5px;
     border-radius: 50%;
     margin-left: 250px;
-    margin-bottom: 64.5px;
+    margin-bottom: 76.5px;
     margin-top: 64.5px;
     position: relative;
     background-image: url(img/story.PNG);
@@ -615,8 +619,8 @@ footer ul {
 
 .new {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 2fr));
-    grid-gap: 1em;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    grid-gap: 20px;
     max-width: 1100px;
     margin: 0 auto;
     padding: 20px;
@@ -707,12 +711,12 @@ footer ul {
 
 #liste {
     /* Boxed layout i liste, hvor data ligger i - responsivt grid */
+    padding-bottom: 50px;
     max-width: 1100px;
     margin: 0 auto;
-    display: block;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 2fr));
-    grid-gap: 1em;
-    padding-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    grid-gap: 20px;
 }
 
 #liste h3 {
@@ -727,14 +731,6 @@ footer ul {
     height: 30rem;
     margin-top: 30px;
     border-radius: 15px 15px 15px 15px;
-}
-
-#liste {
-    max-width: 1100px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-    grid-gap: 20px;
 }
 
 #liste article {
@@ -789,7 +785,7 @@ footer ul {
     width: 25rem;
     height: 40rem;
     margin-top: 60px;
-    margin-left: 130px;
+    margin-left: 118px;
     border-radius: 15px 15px 15px 15px;
 }
 
@@ -868,8 +864,6 @@ footer ul {
 
 }
 
-/* MAX-WIDTH 991px ========================= */
-
 @media only screen and (max-width: 991px) {
     #header_menu {
         display: block;
@@ -916,134 +910,6 @@ footer ul {
         float: right;
     }
 
-}
-
-/* MIN-WIDTH 992px ========================= */
-
-@media only screen and (min-width: 992px) {
-
-    .main-menu {
-        width: auto;
-    }
-
-    .main-menu a {
-        white-space: nowrap;
-    }
-
-    .main-menu ul li {
-        display: inline-block;
-    }
-
-    .main-menu ul li.submenu:hover > a:before,
-    .main-menu ul li.submenu:hover > a:after {
-        bottom: -10px;
-        opacity: 0;
-    }
-
-    .main-menu ul ul {
-        position: absolute;
-        border-top: 2px solid #000;
-        z-index: 1;
-        visibility: hidden;
-        left: 3px;
-        top: 100%;
-        margin: 0;
-        display: block;
-        padding: 0;
-        background: #000;
-        min-width: 210px;
-        -webkit-box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.175);
-        -moz-box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.175);
-        box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.175);
-        transform: scale(0.4);
-        transform-origin: 10% top;
-        transition: 0.15s linear, 0.1s opacity cubic-bezier(0.39, 0.575, 0.565, 1), 0.15s transform cubic-bezier(0.1, 1.26, 0.83, 1);
-        -webkit-border-radius: 3px;
-        -moz-border-radius: 3px;
-        -ms-border-radius: 3px;
-        border-radius: 3px;
-        opacity: 0;
-        -moz-transition: all 0.2s ease;
-        -o-transition: all 0.2s ease;
-        -webkit-transition: all 0.2s ease;
-        -ms-transition: all 0.2s ease;
-        transition: all 0.2s ease;
-    }
-
-    .main-menu ul ul:before {
-        bottom: 100%;
-        left: 12%;
-        border: solid transparent;
-        content: " ";
-        height: 0;
-        width: 0;
-        position: absolute;
-        pointer-events: none;
-        border-bottom-color: #000;
-        border-width: 7px;
-        margin-left: -7px;
-    }
-
-    .main-menu ul li:hover > ul {
-        padding: 0;
-        visibility: visible;
-        opacity: 1;
-        -webkit-transform: scale(1);
-        transform: scale(1);
-        -webkit-transition-delay: 0.2s;
-        transition-delay: 0.2s;
-        -webkit-transition-duration: 0s, 0.2s, 0.2s;
-        transition-duration: 0s, 0.2s, 0.2s;
-    }
-
-    .main-menu ul ul li {
-        display: block;
-        height: auto;
-        padding: 0;
-    }
-
-    .main-menu ul ul li a {
-        font-size: 13px;
-        font-size: 0.8125rem;
-        color: #fff;
-        text-decoration: none;
-        border-bottom: 1px solid #000;
-        display: block;
-        padding: 12px 15px;
-        -moz-transition: all 0.3s ease;
-        -o-transition: all 0.3s ease;
-        -webkit-transition: all 0.3s ease;
-        -ms-transition: all 0.3s ease;
-        transition: all 0.3s ease;
-    }
-
-    .main-menu ul ul li:last-child a {
-        border-bottom: none;
-    }
-
-    .main-menu ul ul li:first-child a:hover {
-        -webkit-border-radius: 3px 3px 0 0;
-        -moz-border-radius: 3px 3px 0 0;
-        -ms-border-radius: 3px 3px 0 0;
-        border-radius: 3px 3px 0 0;
-    }
-
-    .main-menu ul ul li:last-child a {
-        border-bottom: none;
-    }
-
-    .main-menu ul ul li:last-child a:hover {
-        -webkit-border-radius: 0 0 3px 3px;
-        -moz-border-radius: 0 0 3px 3px;
-        -ms-border-radius: 0 0 3px 3px;
-        border-radius: 0 0 3px 3px;
-    }
-
-    .main-menu ul ul li:hover > a {
-        background-color: #000;
-        color: #fff;
-        padding-left: 18px;
-    }
 }
 
 /*============================================================================================*/
@@ -1143,6 +1009,18 @@ footer ul {
 
 @media only screen and (max-width: 991px) {
 
+    .splash_1 {
+        background-image: url(img/Udklip1.JPG);
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 90vh;
+        color: #fff;
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+    }
+
     /*============================================================================================*/
     /* splash botton - HOME */
     /*============================================================================================*/
@@ -1162,8 +1040,8 @@ footer ul {
     }
 
     .ps_1 {
-        margin-top: 60px;
-        padding: 460px 110px 10px 90px;
+        margin-top: 0;
+        padding: 420px 140px 10px 120px;
         text-align: center;
         font-family: 'Lato', sans-serif;
         color: black;
