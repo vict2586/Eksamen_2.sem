@@ -174,7 +174,7 @@ header {
 }
 
 #burger-menu.overlay {
-    height: 35%;
+    height: 45%;
     width: 0;
     position: fixed;
     z-index: 200;
@@ -272,7 +272,7 @@ header {
     background-size: cover;
     z-index: 400;
     position: absolute;
-    bottom: 224px;
+    bottom: 240px;
     width: 60%;
 }
 
@@ -1038,7 +1038,7 @@ footer ul {
 
     .ps_1 {
         margin-top: 0;
-        padding: 600px 50px 0 40px;
+        padding: 470px 50px 0 40px;
         text-align: center;
         font-family: 'Lato', sans-serif;
         color: black;
@@ -1099,7 +1099,7 @@ footer ul {
         font-size: 13px;
         font-family: 'Lato', sans-serif;
         text-transform: uppercase;
-        margin: 120px 0px 60px 150px;
+        margin: 100px 0px 60px 150px;
         color: #fff;
         background-color: rgba(000, 000, 000, 0.80);
         position: absolute;
