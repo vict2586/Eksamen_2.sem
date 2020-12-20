@@ -38,7 +38,6 @@
 
 .align-center {
     text-align: center;
-    margin-top: 20px;
     font-family: 'Lato', sans-serif;
 }
 
@@ -52,6 +51,10 @@
     text-align: center;
     margin-bottom: 20px;
     font-family: 'Lato', sans-serif;
+}
+
+.SoMe {
+    margin-top: 150px;
 }
 
 /*============================================================================================*/
@@ -415,9 +418,31 @@ footer ul {
 
 .intro_tekst h1 {
     text-align: center;
-    margin: 20px 400px 10px 360px;
+    margin: 0 400px 10px 360px;
     font-family: 'Lato', sans-serif;
     line-height: 30px;
+}
+
+.line_1 {
+    width: 15.5px;
+    height: 3px;
+    margin-left: 522.5px;
+    margin-bottom: -5px;
+    margin-top: 20px;
+}
+
+.line_2 {
+    width: 19.5px;
+    height: 3px;
+    margin-left: 112.5px;
+    margin-bottom: -5px;
+}
+
+.line_3 {
+    width: 15.5px;
+    height: 3px;
+    margin-left: 127.5px;
+    margin-bottom: -5px;
 }
 
 .intro_tekst p {
@@ -487,11 +512,31 @@ footer ul {
     font-family: 'Lato', sans-serif;
     padding-bottom: 10px;
     letter-spacing: 1.3px;
-    margin-top: 100px;
     padding-right: 50px;
-    padding-top: 50px;
     text-align: center;
     position: relative;
+}
+
+.line_6 {
+    width: 19.5px;
+    height: 3px;
+    margin-left: 176.5px;
+    margin-bottom: -28px;
+    margin-top: 150px;
+}
+
+.line_7 {
+    width: 15.5px;
+    height: 3px;
+    margin-left: 77.5px;
+    margin-bottom: -28px;
+}
+
+.line_8 {
+    width: 19.5px;
+    height: 3px;
+    margin-left: 321.5px;
+    margin-bottom: -10px;
 }
 
 .kasser_2 p {
@@ -503,15 +548,28 @@ footer ul {
     position: relative;
 }
 
-.kasser_2 .video {
-    width: 100%;
-    height: 55vh;
-    padding-left: 300px;
-    background-color: aquamarine;
-    margin-bottom: 76px;
+.kasser_2 iframe {
+    width: 600px;
+    height: 350px;
+    padding-left: 50px;
+    margin-bottom: 10px;
     margin-top: 64.5px;
     position: relative;
-    border-radius: 15px 15px 15px 15px;
+}
+
+.kasser_2 .V_link {
+    padding-left: 50px;
+    margin-bottom: 54px;
+}
+
+.V_link a {
+    font-family: 'Lato', sans-serif;
+    color: #000;
+    text-decoration: none;
+}
+
+.V_link a:hover {
+    opacity: 0.8;
 }
 
 .kasser_2 .billede {
@@ -530,11 +588,17 @@ footer ul {
     font-family: 'Lato', sans-serif;
     padding-bottom: 10px;
     letter-spacing: 1.3px;
-    margin-top: 50px;
     padding-right: 190px;
-    padding-top: 50px;
     text-align: center;
     position: relative;
+}
+
+.line_9 {
+    width: 19.5px;
+    height: 3px;
+    margin-left: 223.5px;
+    margin-top: 100px;
+    margin-bottom: -10px;
 }
 
 .kasser_2 .column_1 p {
@@ -569,6 +633,22 @@ footer ul {
     padding-left: 0;
     font-weight: 400;
     text-align: center;
+}
+
+.line_4 {
+    width: 19.5px;
+    height: 3px;
+    margin-left: 720.5px;
+    margin-top: 20px;
+    margin-bottom: -10px;
+}
+
+.line_5 {
+    width: 19px;
+    height: 3px;
+    margin-left: 679.5px;
+    margin-top: 20px;
+    margin-bottom: -10px;
 }
 
 .new p {
@@ -714,6 +794,40 @@ footer ul {
     margin-bottom: 10px;
     text-align: center;
     position: relative;
+}
+
+.prudukt_farve {
+    width: 100px;
+    height: 150px;
+}
+
+.prudukt_farve_1 {
+    width: 100px;
+    height: 150px;
+    margin-left: 130px;
+}
+
+.produkt button {
+    background-color: #000;
+    color: #fff;
+    width: 300px;
+    height: 50px;
+    position: absolute;
+    margin-top: 200px;
+    margin-left: -305px;
+    padding: 5px 80px 5px 0;
+}
+
+.produkt button img {
+    width: 40px;
+    height: 40px;
+    margin: 0;
+}
+
+.produkt button p {
+    margin: -45px 0 0 160px;
+    color: #fff;
+    font-size: 30px;
 }
 
 /*============================================================================================*/
@@ -941,6 +1055,28 @@ footer ul {
         line-height: 30px;
     }
 
+    .line_1 {
+        width: 13.5px;
+        height: 3px;
+        margin-left: 56.5px;
+        margin-bottom: -23px;
+        margin-top: 20px;
+    }
+
+    .line_2 {
+        width: 18.5px;
+        height: 3px;
+        margin-left: 114.5px;
+        margin-bottom: -24px;
+    }
+
+    .line_3 {
+        width: 13.5px;
+        height: 3px;
+        margin-left: 129.5px;
+        margin-bottom: -23px;
+    }
+
     .intro_tekst p {
         text-align: center;
         margin: 0 20px 30px 20px;
@@ -1034,6 +1170,22 @@ footer ul {
         margin-left: -30px;
     }
 
+    .line_4 {
+        width: 19.5px;
+        height: 3px;
+        margin-left: 233.5px;
+        margin-top: 20px;
+        margin-bottom: -10px;
+    }
+
+    .line_5 {
+        width: 19px;
+        height: 3px;
+        margin-left: 192.5px;
+        margin-top: 20px;
+        margin-bottom: -10px;
+    }
+
     /*============================================================================================*/
     /* FILTER - STORE */
     /*============================================================================================*/
@@ -1079,7 +1231,7 @@ footer ul {
 /* STORY */
 /*============================================================================================*/
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 1200px) {
 
     /*============================================================================================*/
     /* 2 BOKSE STORY */
@@ -1115,6 +1267,14 @@ footer ul {
         padding-top: 20px;
         text-align: center;
         position: relative;
+    }
+
+    .line_9 {
+        width: 19.5px;
+        height: 3px;
+        margin-left: 194.5px;
+        margin-top: 0;
+        margin-bottom: -29px;
     }
 
     .kasser_2 .column_1 p {
@@ -1155,6 +1315,28 @@ footer ul {
         position: relative;
     }
 
+    .line_6 {
+        width: 19.5px;
+        height: 3px;
+        margin-left: 81.5px;
+        margin-bottom: -27px;
+        margin-top: 0;
+    }
+
+    .line_7 {
+        width: 15.5px;
+        height: 3px;
+        margin-left: 77.5px;
+        margin-bottom: -28px;
+    }
+
+    .line_8 {
+        width: 19.5px;
+        height: 3px;
+        margin-left: 226.5px;
+        margin-bottom: -10px;
+    }
+
     .kasser_2 p {
         font-family: 'Lato', sans-serif;
         padding-bottom: 6.5px;
@@ -1165,15 +1347,28 @@ footer ul {
         position: relative;
     }
 
-    .kasser_2 .video {
-        width: 100%;
-        height: 30vh;
-        padding-left: 300px;
-        background-color: aquamarine;
-        margin-bottom: 30px;
+    .kasser_2 iframe {
+        width: 350px;
+        height: 200px;
+        padding-left: 30px;
+        margin-bottom: 10px;
         margin-top: 64.5px;
         position: relative;
-        border-radius: 0;
+    }
+
+    .kasser_2 .V_link {
+        padding-left: 50px;
+        margin-bottom: 0;
+    }
+
+    .V_link a {
+        font-family: 'Lato', sans-serif;
+        color: #000;
+        text-decoration: none;
+    }
+
+    .V_link a:hover {
+        opacity: 0.8;
     }
 
     .kasser_2 .column {
@@ -1223,7 +1418,42 @@ footer ul {
     }
 
     .produkt .column_1 {
+        margin-bottom: 120px;
+    }
+
+    .prudukt_farve {
+        width: 100px;
+        height: 150px;
+    }
+
+    .prudukt_farve_1 {
+        width: 100px;
+        height: 150px;
+        margin-left: 30px;
+    }
+
+    .produkt button {
+        background-color: #000;
+        color: #fff;
+        width: 300px;
+        height: 50px;
+        position: absolute;
+        margin-top: 200px;
+        margin-left: -305px;
         margin-bottom: 20px;
+        padding: 5px 80px 5px 0;
+    }
+
+    .produkt button img {
+        width: 40px;
+        height: 40px;
+        margin: 0;
+    }
+
+    .produkt button p {
+        margin: -45px 0 0 140px;
+        color: #fff;
+        font-size: 30px;
     }
 
     /*============================================================================================*/
