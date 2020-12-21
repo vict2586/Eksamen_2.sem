@@ -174,7 +174,7 @@ header {
 }
 
 #burger-menu.overlay {
-    height: 45%;
+    height: 50%;
     width: 0;
     position: fixed;
     z-index: 200;
@@ -272,7 +272,7 @@ header {
     background-size: cover;
     z-index: 400;
     position: absolute;
-    bottom: 240px;
+    bottom: 270px;
     width: 60%;
 }
 
