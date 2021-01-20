@@ -4,12 +4,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Susstainable clothing for women">
+    <meta name="description" content="Wellcome to Nam Le here can you find susstainable clothing for women">
     <meta name="keywords" content="Nam Le, Nam Le clothing, Nam clothing">
 
     <title>Home</title>
 
-    <link rel="stylesheet" href="Stye.css">
+    <link rel="stylesheet" href="Re-do.css">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
@@ -89,10 +89,7 @@
     <!----------------------------------------------------------------------------------------------------------------->
 
     <div class="intro_tekst">
-        <img class="line_1" src="img/dot.png" alt="line over the letter E">
-        <img class="line_2" src="img/dot.png" alt="line over the letter T">
-        <img class="line_3" src="img/dot.png" alt="line over the letter E">
-        <h1>WELCOME TO NAM LE</h1>
+        <img src="img/Welcome_To_Nam_Le.JPG" alt="Welcome to Nam Le">
         <p>Our mission is to minimize and eliminate textile waste — both pre-consumer by using zero-waste pattern cutting and post-consumer by using recycled or recyclable materials. We want to create conscious, zero-waste, and circular clothing collections.</p>
     </div>
 
@@ -134,6 +131,32 @@
     </div>
 
     <!----------------------------------------------------------------------------------------------------------------->
+    <!-- SIGN UP -->
+    <!----------------------------------------------------------------------------------------------------------------->
+
+    <button class="NB_knap">Subscribe</button>
+
+    <div class="NB_baggrund">
+        <button class="NB_luk">^</button>
+
+        <div class="NB_text">
+            <h1>Your email</h1>
+
+            <div class="NB_white">
+                <input type="text" placeholder="Email...">
+            </div>
+        </div>
+
+        <div class="NB_thanks">
+            <h1>Thank you for signing up</h1>
+            <p>You will receive exciting news and discounts by email </p>
+        </div>
+
+        <button class="NB_sign">Sign up</button>
+
+    </div>
+
+    <!----------------------------------------------------------------------------------------------------------------->
     <!-- FOOTER -->
     <!----------------------------------------------------------------------------------------------------------------->
 
@@ -163,10 +186,76 @@
     </footer>
 
     <!----------------------------------------------------------------------------------------------------------------->
+    <!-- JAVASCRIPT -->
+    <!----------------------------------------------------------------------------------------------------------------->
+
+    <script>
+        // --- Venter til html'en er loaded --- //
+
+        document.addEventListener("DOMContentLoaded", loade);
+
+        function loade() {
+
+            document.querySelector(".NB_luk").removeEventListener("click", loade);
+
+            // --- Skjuler popup --- //
+
+            document.querySelector(".NB_baggrund").style.display = "none";
+
+            // --- Lytter efter klik --- //
+
+            document.querySelector(".NB_knap").addEventListener("click", OpenPopUp);
+
+        }
+
+        function OpenPopUp() {
+
+            document.querySelector(".NB_knap").removeEventListener("click", OpenPopUp);
+
+            // --- Viser første popup --- //
+
+            document.querySelector(".NB_baggrund").style.display = "block";
+
+            // --- Skjuler anden popup --- //
+
+            document.querySelector(".NB_thanks").style.display = "none";
+
+            // --- Lytter efter klik --- //
+
+            document.querySelector(".NB_sign").addEventListener("click", ThankYou);
+
+            // --- Lytter efter klik --- //
+
+            document.querySelector(".NB_luk").addEventListener("click", loade);
+
+        }
+
+        function ThankYou() {
+
+            document.querySelector(".NB_sign").removeEventListener("click", ThankYou);
+
+            // --- Skjuler første popup --- //
+
+            document.querySelector(".NB_text").style.display = "none";
+
+            // --- Skjuler første popup --- //
+
+            document.querySelector(".NB_sign").style.display = "none";
+
+            // --- Viser anden popup --- //
+
+            document.querySelector(".NB_thanks").style.display = "block";
+
+            // --- Lytter efter klik --- //
+
+            document.querySelector(".NB_luk").addEventListener("click", loade);
+
+        }
+    </script>
+
+    <!----------------------------------------------------------------------------------------------------------------->
     <!-- JAVASCRIPT - Burger menu -->
     <!----------------------------------------------------------------------------------------------------------------->
 
-    <script src="Script.js"></script>
-</body>
-
-</html>
+    <script src="re-do-script.js"></script>
+</body></html>

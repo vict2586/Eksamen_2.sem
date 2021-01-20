@@ -1,0 +1,1057 @@
+/*============================================================================================*/
+/*============================================================================================*/
+/* General */
+/*============================================================================================*/
+/*============================================================================================*/
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 50%;
+}
+
+.SoMe {
+    font-family: 'Lato', sans-serif;
+    margin-top: 0rem;
+    margin-left: 18%;
+}
+
+/*============================================================================================*/
+/*============================================================================================*/
+/* Header - ALL */
+/*============================================================================================*/
+/*============================================================================================*/
+
+header {
+    width: 100%;
+    position: absolute;
+    background-color: #000;
+    height: 10%;
+}
+
+/*============================================================================================*/
+/*============================================================================================*/
+/* Burger menu - ALL */
+/*============================================================================================*/
+/*============================================================================================*/
+
+#burger-menu {
+    float: left;
+    width: 0%;
+    height: auto;
+}
+
+#burger-menu a {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding-bottom: 8px;
+    padding-top: 4px;
+}
+
+.overlay > ul > li:hover > a {
+    opacity: 0.8;
+}
+
+#burger-menu a img {
+    width: 25%;
+}
+
+#closebtn {
+    float: right;
+    font-size: 50px;
+    font-weight: 100;
+    color: #fff;
+    cursor: pointer;
+}
+
+#openbtn {
+    color: #fff;
+    font-size: 45px;
+    display: block;
+    float: right;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.overlay {
+    position: fixed;
+    background-color: #000;
+    overflow: hidden;
+    transition: 0.7s;
+    top: 0%;
+    z-index: 70;
+}
+
+/*============================================================================================*/
+/*============================================================================================*/
+/* Menu - ALL */
+/*============================================================================================*/
+/*============================================================================================*/
+
+.main-menu {
+    position: relative;
+    float: right;
+    z-index: 999;
+}
+
+.main-menu ul,
+li {
+    text-decoration: none;
+}
+
+.main-menu a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    display: inline-block;
+    margin: 20px 100px 0 0;
+    width: 80%;
+    font-weight: 100;
+}
+
+.main-menu > ul > li:hover > a {
+    opacity: 0.8;
+}
+
+.main-menu ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+    grid-gap: 1em;
+    padding: 0
+}
+
+/*============================================================================================*/
+/*============================================================================================*/
+/* Logo - ALL */
+/*============================================================================================*/
+/*============================================================================================*/
+
+#logo {
+    float: left;
+}
+
+.logo_normal {
+    margin-top: 13px;
+    height: 40px;
+    width: 200px;
+    margin-left: 10px;
+}
+
+.burger-logo img {
+    background-size: cover;
+    width: 50%;
+}
+
+/*============================================================================================*/
+/*============================================================================================*/
+/* Home */
+/*============================================================================================*/
+/*============================================================================================*/
+
+/*============================================================================================*/
+/* Splash */
+/*============================================================================================*/
+
+.splash_1 {
+    background-image: url(img/Udklip1.JPG);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 88vh;
+    color: #fff;
+}
+
+.splash_1 .sectionwrapper {
+    width: 80%;
+    position: absolute;
+}
+
+.splash_1 button {
+    background-color: rgba(000, 000, 000, 0.80);
+    border: 1px rgba(000, 000, 000, 0.80);
+    float: left;
+    padding: 0.5rem 2rem;
+    margin-top: 0.7rem;
+    margin-left: 40%;
+    margin-right: auto;
+    width: 50%;
+}
+
+.splash_1 button a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-family: 'Lato', sans-serif;
+}
+
+.ps_1 {
+    background-color: rgba(000, 000, 000, 0.80);
+    margin-left: auto;
+    margin-top: 27rem;
+    width: 70%;
+    padding: 0.5rem;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+    border-radius: 5px 5px 5px 5px;
+}
+
+/*============================================================================================*/
+/* Tekst */
+/*============================================================================================*/
+
+.intro_tekst {
+    width: 80%;
+    margin-left: 10%
+}
+
+.intro_tekst img {
+    width: 100%;
+    height: auto;
+    margin: 1.1rem 0 1.1rem 0;
+    margin-left: auto;
+}
+
+.intro_tekst p {
+    text-align: center;
+    margin: 0 2rem 2rem 2rem;
+    font-family: 'Lato', sans-serif;
+    line-height: 30px;
+}
+
+/*============================================================================================*/
+/* 3 Bokse */
+/*============================================================================================*/
+
+.kasser {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-gap: 20px;
+    padding: 0;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.kasser h3 {
+    font-size: 13px;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    margin: 7rem 0 6rem 10rem;
+    color: #fff;
+    background-color: rgba(000, 000, 000, 0.80);
+    position: absolute;
+    padding-bottom: 10px;
+    letter-spacing: 1.3px;
+    padding: 10px 30px;
+    text-align: center;
+}
+
+.quicklinks_3 li {
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.quicklinks_3 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1.5rem;
+}
+
+.quicklinks_3 img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+/*============================================================================================*/
+/* SIGN UP */
+/*============================================================================================*/
+
+.NB_knap {
+    float: right;
+    color: #fff;
+    background-color: #707070;
+    border: none;
+    font-weight: 500;
+    font-family: 'Lato', sans-serif;
+    padding: 0.5rem 1.5rem;
+}
+
+.NB_baggrund {
+    position: relative;
+    font-family: 'Lato', sans-serif;
+    background-color: #707070;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    margin-top: -8.3rem;
+    float: right;
+}
+
+.NB_baggrund h1 {
+    margin-bottom: 0.5rem;
+    margin-top: 2rem;
+}
+
+.NB_white input {
+    height: 2rem;
+    width: 21.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.NB_sign {
+    background-color: rgba(fff, 000, 000, 0.80);
+    color: #000;
+    font-family: 'Lato', sans-serif;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    margin-left: 8rem;
+}
+
+.NB_luk {
+    background-color: rgba(255, 000, 000, 0.80);
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    float: right;
+    border: none;
+    padding: 0.5rem 1.5rem;
+}
+
+/*============================================================================================*/
+/*============================================================================================*/
+/* STORE */
+/*============================================================================================*/
+/*============================================================================================*/
+
+/*============================================================================================*/
+/* SPLASH */
+/*============================================================================================*/
+
+.splash_2 {
+    background-image: url(img/top-view-cotton-flowers_23-2148202222.jpg);
+    background-size: cover;
+    background-position: center 90%;
+    width: 100%;
+    height: 88vh;
+    color: #fff;
+}
+
+.splash_2 .sectionwrapper {
+    width: 80%;
+    position: absolute;
+}
+
+.sp_2 {
+    margin-left: auto;
+    margin-top: 17rem;
+    width: 80%;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    color: #000;
+    font-weight: bold;
+}
+
+.ps_2 {
+    margin-left: auto;
+    width: 80%;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    color: #000;
+    font-weight: bold;
+}
+
+/*============================================================================================*/
+/* TEXT THINGS */
+/*============================================================================================*/
+
+.brod_text {
+    text-align: center;
+    margin-top: 1rem;
+    margin-left: auto;
+    font-family: 'Lato', sans-serif;
+}
+
+.brod_text1 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-family: 'Lato', sans-serif;
+}
+
+.newest {
+    margin-top: 1rem;
+    width: 50%;
+    height: auto;
+    margin-left: 25%;
+}
+
+.store {
+    margin-top: 1rem;
+    width: 50%;
+    height: auto;
+    margin-left: 25%;
+}
+
+/*============================================================================================*/
+/* NEW */
+/*============================================================================================*/
+
+.new {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    grid-gap: 20px;
+    max-width: 1100px;
+    margin-left: -0.5rem;
+    padding-top: 20px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.new h3 {
+    font-size: 1rem;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    color: #000;
+    letter-spacing: 1.3px;
+    padding-left: 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+.new p {
+    font-size: 0.8rem;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    color: #000;
+    letter-spacing: 1.3px;
+    padding-left: 0;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+    font-weight: 400;
+}
+
+.new img {
+    width: 15rem;
+    height: 28rem;
+    padding-bottom: 10px;
+    border-radius: 15px 15px 25px 25px;
+}
+
+/*============================================================================================*/
+/* FILTER */
+/*============================================================================================*/
+
+.nav {
+    margin-top: 15px;
+    width: 80%;
+    margin-left: 3rem;
+}
+
+.filter {
+    display: flex;
+    flex-grow: 1;
+    background-color: black;
+    color: white;
+    padding: 3px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+.filter:hover {
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+}
+
+.valgt {
+    background-color: white;
+    color: black;
+}
+
+/*============================================================================================*/
+/* REST API */
+/*============================================================================================*/
+
+#liste {
+    /* Boxed layout i liste, hvor data ligger i - responsivt grid */
+    padding-bottom: 50px;
+    max-width: 1500px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    grid-gap: 20px;
+}
+
+#liste h3 {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+#liste h4 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+    font-size: 13px;
+}
+
+#liste img {
+    object-fit: cover;
+    width: 15rem;
+    height: 30rem;
+    margin-top: 30px;
+    border-radius: 15px 15px 15px 15px;
+}
+
+#liste article {
+    padding: 0 30px 30px 30px;
+    cursor: pointer;
+    font-weight: 400;
+    text-align: center;
+    font-size: 0.875rem;
+    color: #000;
+    margin: 0;
+}
+
+/*============================================================================================*/
+/*============================================================================================*/
+/* STUDIO */
+/*============================================================================================*/
+/*============================================================================================*/
+
+.kasser_2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    grid-gap: 1em;
+    padding-top: 45px;
+    padding-left: 0;
+    max-width: 1500px;
+}
+
+.studio {
+    width: 60%;
+    height: auto;
+    margin-top: 0%;
+    margin-left: 7%;
+}
+
+.kasser_2 p {
+    font-family: 'Lato', sans-serif;
+    padding-bottom: 1rem;
+    letter-spacing: 1.3px;
+    padding-right: 10rem;
+    padding-left: 2rem;
+    text-align: center;
+    position: relative;
+}
+
+.kasser_2 iframe {
+    width: 67%;
+    height: 30vh;
+    margin-left: 1.2rem;
+    margin-bottom: 1rem;
+    margin-top: 3rem;
+    position: relative;
+}
+
+.kasser_2 .V_link {
+    padding-left: 1.2rem;
+}
+
+.kasser_2 .V_link a {
+    font-family: 'Lato', sans-serif;
+    color: #000;
+    text-decoration: none;
+}
+
+.kasser_2 .V_link a:hover {
+    opacity: 0.8;
+}
+
+.kasser_2 .column {
+    margin-bottom: 1rem;
+}
+
+/*============================================================================================*/
+/*============================================================================================*/
+/* STORY */
+/*============================================================================================*/
+/*============================================================================================*/
+
+.kasser_2 .billede {
+    width: 60%;
+    height: 60vh;
+    border-radius: 50%;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 5rem;
+    position: relative;
+    background-image: url(img/story.PNG);
+    background-position: 84% 10%;
+    align-self: center;
+}
+
+.story {
+    width: 60%;
+    height: auto;
+    margin-left: 7%;
+}
+
+.kasser_2 .column_1 p {
+    font-family: 'Lato', sans-serif;
+    padding-bottom: 1rem;
+    letter-spacing: 1.3px;
+    padding-right: 10rem;
+    padding-left: 2rem;
+    text-align: center;
+    position: relative;
+}
+
+.kasser_2 .column_1 {
+    margin-bottom: 1rem;
+}
+
+/*============================================================================================*/
+/*============================================================================================*/
+/* SINGLEVIEW */
+/*============================================================================================*/
+/*============================================================================================*/
+
+/*============================================================================================*/
+/* Gots-logo */
+/*============================================================================================*/
+
+.gots-logo {
+    width: 10%;
+    height: 3rem;
+    position: absolute;
+    margin-top: 98%;
+    margin-left: 11%;
+}
+
+/*============================================================================================*/
+/* Produkt */
+/*============================================================================================*/
+
+.produkt {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    grid-gap: 0em;
+    padding-top: 45px;
+    padding-left: 0;
+}
+
+.produkt h1 {
+    font-family: 'Lato', sans-serif;
+    padding-bottom: 10px;
+    letter-spacing: 1.3px;
+    margin-top: 3rem;
+    padding-top: 1rem;
+    padding-right: 8rem;
+    padding-left: 1rem;
+    text-align: center;
+    position: relative;
+}
+
+.produkt p {
+    font-family: 'Lato', sans-serif;
+    padding-bottom: 6.5px;
+    letter-spacing: 1.3px;
+    padding-right: 8rem;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    text-align: center;
+    position: relative;
+}
+
+.produkt .column_1 {
+    margin-bottom: 12rem;
+}
+
+.prudukt_farve {
+    width: 20%;
+    height: 26vh;
+}
+
+.prudukt_farve_1 {
+    width: 20%;
+    height: 26vh;
+    margin-left: 10%;
+}
+
+.produkt button {
+    background-color: #000;
+    color: #fff;
+    position: absolute;
+    width: 80%;
+    height: 4rem;
+    margin-top: 14rem;
+    margin-left: -81.5%;
+    margin-bottom: 8rem;
+    padding: 5px 80px 5px 0;
+}
+
+.produkt button img {
+    width: 25%;
+    height: 8vh;
+}
+
+.produkt button p {
+    margin: -3rem 0 0 8rem;
+    color: #fff;
+    font-size: 30px;
+}
+
+/*============================================================================================*/
+/* REST API */
+/*============================================================================================*/
+
+.info img {
+    object-fit: cover;
+    width: 18rem;
+    height: 30rem;
+    margin-top: 4rem;
+    margin-left: 3rem;
+    border-radius: 15px 15px 15px 15px;
+}
+
+.dots {
+    margin-left: 10rem;
+}
+
+/*============================================================================================*/
+/* LÅNT KODE */
+/*============================================================================================*/
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding-left: 20px;
+    margin-top: -22px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 140px;
+    border-radius: 3px 0 0 3px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    margin-bottom: 10px;
+}
+
+.active,
+.dot:hover {
+    background-color: #000;
+}
+
+
+/*============================================================================================*/
+/*============================================================================================*/
+/* FOOTER - ALL */
+/*============================================================================================*/
+/*============================================================================================*/
+
+footer,
+footer ul {
+    background-color: #000;
+    color: #fff;
+    list-style: none;
+    padding: 0;
+}
+
+footer li {
+    font-size: 14px;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    letter-spacing: 1.3px;
+}
+
+footer .row {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-gap: 1em;
+    max-width: 1500px;
+    margin: 0 auto;
+    margin-top: 2.2rem
+}
+
+footer h3 {
+    font-size: 14px;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    padding-bottom: 10px;
+    letter-spacing: 1.3px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.grow {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30px, 1fr));
+}
+
+.i1 img {
+    padding-bottom: 20px;
+    margin-left: 430%;
+    width: 150%;
+    height: auto;
+}
+
+.i2 img {
+    margin-left: 500%;
+    padding-bottom: 20px;
+    padding-top: 4px;
+    width: 125%;
+    height: auto;
+}
+
+.i3 img {
+    margin-left: 550%;
+    padding-bottom: 20px;
+    padding-top: 4px;
+    width: 125%;
+    height: auto;
+}
+
+/*============================================================================================*/
+/*============================================================================================*/
+/* Mediaqueries */
+/*============================================================================================*/
+/*============================================================================================*/
+
+/*============================================================================================*/
+/* Menu - ALL */
+/*============================================================================================*/
+
+@media only screen and (max-width: 1200px) {
+
+    .main-menu {
+        display: none
+    }
+
+}
+
+/*============================================================================================*/
+/* Burger menu - ALL */
+/*============================================================================================*/
+
+@media only screen and (min-width: 1200px) {
+
+    #burger-menu {
+        display: none;
+    }
+
+    #openbtn {
+        display: none;
+    }
+}
+
+/*============================================================================================*/
+/* Home */
+/*============================================================================================*/
+
+/* 3 Bokse */
+/* Intro tekst */
+/* SIGN UP */
+@media only screen and (min-width: 1200px) {
+
+    .kasser {
+        grid-gap: 3em;
+    }
+
+    .intro_tekst img {
+        width: 40%;
+        margin: 1.1rem 0 1.1rem 30%;
+    }
+
+    .intro_tekst p {
+        margin: 0 2rem 2rem 2rem;
+    }
+
+    .NB_baggrund {
+        margin-right: -6.6rem;
+    }
+
+}
+
+/* Splash tekst */
+@media only screen and (max-width: 350px) {
+
+    .ps_1 {
+        margin-top: 17rem;
+    }
+
+}
+
+/*============================================================================================*/
+/* Store */
+/*============================================================================================*/
+
+/* Filter */
+/* Tekst */
+/* Gots-logo */
+@media only screen and (min-width: 1200px) {
+
+    .nav {
+        margin-left: 28rem;
+    }
+
+    .newest {
+        width: 20%;
+        margin-left: 40%;
+    }
+
+    .store {
+        width: 20%;
+        margin-left: 40%;
+    }
+
+
+    .gots-logo {
+        height: 4rem;
+        margin-top: 70%;
+        margin-left: 30%;
+    }
+}
+
+/*============================================================================================*/
+/* Studio */
+/*============================================================================================*/
+
+/* Grid */
+/* Tekst */
+/* Video */
+@media only screen and (min-width: 1200px) {
+
+    .kasser_2 {
+        grid-gap: 4em;
+    }
+
+    .studio {
+        margin-top: 20%;
+        margin-left: 9%;
+    }
+
+    .kasser_2 iframe {
+        width: 100%;
+        height: 70vh;
+    }
+
+    .kasser_2 .column {
+        margin-bottom: 5rem;
+    }
+
+}
+
+/*============================================================================================*/
+/* Story */
+/*============================================================================================*/
+
+/* Tekst */
+/* Bilede */
+@media only screen and (min-width: 1200px) {
+
+    .kasser_2 .billede {
+        width: 45%;
+        height: 60vh;
+        margin-left: 10rem;
+    }
+
+    .story {
+        margin-left: 10%;
+        margin-top: 15%;
+    }
+}
+
+/*============================================================================================*/
+/* Singleview */
+/*============================================================================================*/
+
+/* Dots */
+/* Bilede */
+/* Knap */
+/* Farve */
+@media only screen and (min-width: 1200px) {
+
+    .prudukt_farve {
+        width: 15%;
+    }
+
+    .prudukt_farve_1 {
+        width: 15%;
+        margin-left: 20%;
+    }
+
+    .produkt button {
+        width: 20%;
+        margin-left: -21.5%;
+    }
+
+    .info img {
+        margin-left: 12rem;
+    }
+
+    .dots {
+        margin-left: 19rem;
+    }
+
+    .prev,
+    .next {
+        padding-left: 8rem;
+    }
+
+}
+
+/*============================================================================================*/
+/* Video site */
+/*============================================================================================*/
+
+/* Tekst */
+@media only screen and (min-width: 1200px) {
+
+    .SoMe {
+        margin-top: 10rem;
+        margin-left: 25%;
+    }
+
+}
