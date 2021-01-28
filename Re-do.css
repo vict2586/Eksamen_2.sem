@@ -244,7 +244,7 @@ li {
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     grid-gap: 1rem;
     padding: 0.5rem;
-    max-width: 1500px;
+    max-width: 1800px;
 }
 
 .kasser h2 {
@@ -282,6 +282,12 @@ li {
     border-radius: 15px;
 }
 
+.column_H3 img {
+    width: 86.3%;
+    height: auto;
+    border-radius: 15px;
+}
+
 /*============================================================================================*/
 /* 3 Bokse info */
 /*============================================================================================*/
@@ -303,7 +309,7 @@ li {
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     grid-gap: 1rem;
     padding: 0.5rem;
-    max-width: 1500px;
+    max-width: 1800px;
 }
 
 .column_info {
@@ -442,14 +448,14 @@ li {
 }
 
 .splash_2 .sectionwrapper {
-    width: 80%;
+    width: 100%;
     position: absolute;
 }
 
 .sp_2 {
-    margin-left: auto;
+    margin-left: 5%;
     margin-top: 17rem;
-    width: 80%;
+    width: 90%;
     text-align: center;
     font-family: 'Lato', sans-serif;
     color: #000;
@@ -457,7 +463,7 @@ li {
 }
 
 .ps_2 {
-    margin-left: auto;
+    margin-left: 10%;
     width: 80%;
     text-align: center;
     font-family: 'Lato', sans-serif;
@@ -634,7 +640,7 @@ li {
 /*============================================================================================*/
 /*============================================================================================*/
 
-.kasser_2 {
+.kasser_1 {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
     grid-gap: 1em;
@@ -647,21 +653,21 @@ li {
     width: 60%;
     height: auto;
     margin-top: 0%;
-    margin-left: 7%;
+    margin-left: 15%;
 }
 
-.kasser_2 p {
+.kasser_1 p {
     font-family: 'Lato', sans-serif;
     padding-bottom: 1rem;
     letter-spacing: 1.3px;
-    padding-right: 10rem;
+    padding-right: 4rem;
     padding-left: 2rem;
     text-align: center;
     position: relative;
 }
 
-.kasser_2 iframe {
-    width: 67%;
+.kasser_1 iframe {
+    width: 85%;
     height: 30vh;
     margin-left: 1.2rem;
     margin-bottom: 1rem;
@@ -669,22 +675,23 @@ li {
     position: relative;
 }
 
-.kasser_2 .V_link {
+.kasser_1 .V_link {
     padding-left: 1.2rem;
 }
 
-.kasser_2 .V_link a {
+.kasser_1 .V_link a {
     font-family: 'Lato', sans-serif;
     color: #000;
     text-decoration: none;
 }
 
-.kasser_2 .V_link a:hover {
+.kasser_1 .V_link a:hover {
     opacity: 0.8;
 }
 
-.kasser_2 .column {
+.kasser_1 .column_1 {
     margin-bottom: 1rem;
+    width: 80%
 }
 
 /*============================================================================================*/
@@ -693,37 +700,45 @@ li {
 /*============================================================================================*/
 /*============================================================================================*/
 
+.kasser_2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    grid-gap: 1em;
+    padding-top: 45px;
+    padding-left: 0;
+    max-width: 500px;
+}
+
 .kasser_2 .billede {
-    width: 60%;
-    height: 60vh;
+    width: 65%;
+    height: 65vh;
     border-radius: 50%;
-    margin-left: 2rem;
-    margin-bottom: 1rem;
-    margin-top: 5rem;
+    margin: 5rem 0 0 3rem;
     position: relative;
     background-image: url(img/story.PNG);
-    background-position: 84% 10%;
+    background-position: 80% 10%;
     align-self: center;
 }
 
 .story {
     width: 60%;
     height: auto;
-    margin-left: 7%;
+    margin-left: 15%;
 }
 
-.kasser_2 .column_1 p {
+.kasser_2 .column_2 p {
     font-family: 'Lato', sans-serif;
     padding-bottom: 1rem;
     letter-spacing: 1.3px;
-    padding-right: 10rem;
+    padding-right: 4rem;
     padding-left: 2rem;
     text-align: center;
     position: relative;
 }
 
-.kasser_2 .column_1 {
+.kasser_2 .column_2 {
     margin-bottom: 1rem;
+    width: 80%
 }
 
 /*============================================================================================*/
@@ -1102,11 +1117,13 @@ footer .Us_3 {
 /* Gots-logo */
 @media only screen and (min-width: 1200px) {
 
+    /* Filter */
     .nav {
         margin-left: 25rem;
         width: 40%;
     }
 
+    /* Tekst */
     .newest {
         width: 15%;
         margin-left: 43%;
@@ -1117,7 +1134,7 @@ footer .Us_3 {
         margin-left: 40%;
     }
 
-
+    /* Gots-logo */
     .gots-logo {
         height: 4rem;
         margin-top: 70%;
@@ -1134,23 +1151,23 @@ footer .Us_3 {
 /* Video */
 @media only screen and (min-width: 1200px) {
 
-    .kasser_2 {
+    .kasser_1 {
         grid-gap: 4em;
     }
 
     .studio {
-        margin-top: 20%;
-        margin-left: 9%;
+        margin-top: 25%;
+        margin-left: 18%;
     }
 
-    .kasser_2 iframe {
-        width: 90%;
+    .kasser_1 iframe {
+        width: 100%;
         height: 50vh;
         margin-left: 5rem;
         margin-top: 5.5rem;
     }
 
-    .kasser_2 .V_link {
+    .kasser_1 .V_link {
         padding-left: 5rem;
     }
 
@@ -1160,25 +1177,28 @@ footer .Us_3 {
 /* Story */
 /*============================================================================================*/
 
-/* Tekst */
 /* Bilede */
+/* Tekst */
 @media only screen and (min-width: 1200px) {
 
     .kasser_2 .billede {
-        width: 45%;
-        height: 60vh;
+        width: 60%;
+        height: 65vh;
         margin-left: 15rem;
+        background-position: 88% 10%;
     }
 
     .story {
-        margin-left: 20%;
+        margin-left: 26%;
         width: 40%;
-        margin-top: 15%;
+        margin-top: 23%;
     }
 
-    .kasser_2 .column {
-        padding-bottom: 0;
+    .kasser_2 {
+        max-width: 1800px;
     }
+
+
 }
 
 /*============================================================================================*/
