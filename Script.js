@@ -12,7 +12,7 @@ function sidenVises() {
 }
 
 function openNav() {
-    document.getElementById("burger-menu").style.width = "80%";
+    document.getElementById("burger-menu").style.width = "100%";
 }
 
 function closeNav() {
@@ -21,7 +21,7 @@ function closeNav() {
 
 
 function openLocalNav() {
-    document.getElementById("local-burger-menu").style.width = "80%";
+    document.getElementById("local-burger-menu").style.width = "100%";
 }
 
 function closeLocalNav() {
