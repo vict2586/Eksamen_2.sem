@@ -241,7 +241,7 @@ li {
 
 .kasser {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
     grid-gap: 1rem;
     padding: 0.5rem;
     max-width: 1800px;
@@ -251,7 +251,7 @@ li {
     font-size: 13px;
     font-family: 'Lato', sans-serif;
     text-transform: uppercase;
-    margin: 7rem 0 6rem 10rem;
+    margin: 7rem 0 6rem 8rem;
     color: #fff;
     background-color: rgba(000, 000, 000, 0.80);
     position: absolute;
@@ -306,7 +306,7 @@ li {
 
 .kasser_info {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
     grid-gap: 1rem;
     padding: 0.5rem;
     max-width: 1800px;
